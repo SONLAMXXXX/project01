@@ -290,7 +290,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.popular-top .controls {
+.controls {
   display: flex;
   gap: 18px;
 }
@@ -301,7 +301,7 @@ a {
   font-size: 1.8rem;
   line-height: 167%; /* 166.667% */
 }
-.popular-top .controls-btn {
+ .controls-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +313,7 @@ a {
   border: 1px solid var(--font-color);
   color: var(--font-color);
 }
-.popular-top .controls-btn:hover {
+ .controls-btn:hover {
   background-color: var(--font-color);
   color: #fff;
   /* tạo hình bàn tay khi di chuột vào */
@@ -323,7 +323,8 @@ a {
 .popular .popular-bot {
   margin-top: 55px;
   gap: 30px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   /* tạo khoảng cách của 3item */
 }
 .popular .popular-item {
@@ -482,12 +483,15 @@ a {
 .features .lower {
   margin-top: 34px;
 }
-.features .content {
-  width: 41%;
+.features__content {
+  max-width: 100%;
   display: flex;
+  margin-left: 100px;
+  padding: 20px;
   /* xoay ngang trục main  */
   flex-direction: column;
   justify-content: center;
+
 }
 .features .heading-lv2 {
   color: #171100;
@@ -521,7 +525,8 @@ a {
   flex-direction: row-reverse;
 }
 .features-2nd .content {
-  width: 41%;
+  max-width: 100%;
+margin: auto  auto;
 }
 .features-2nd .imges img {
   width: 470px;
@@ -544,6 +549,7 @@ a {
   line-height: 175%; /* 175% */
   width: 448px;
 }
+
 .blog-list {
   display: flex;
   margin-top: 55px;
@@ -639,7 +645,7 @@ a {
 .footer {
   padding-top: 96px;
   background: #2e2100;
-  height: 428px;
+  height: auto;
 }
 .footer .row {
   display: flex;

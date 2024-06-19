@@ -181,14 +181,14 @@
             <div class="popular-top">
               <!-- phần bên trái -->
               <div class="info">
-                <n2 class="heading-lv2">Our popular courses</n2>
+                <n2 class="heading-lv2 heading-popular">Our popular courses</n2>
                 <p class="desc">
                   Build new skills with new trendy courses and shine for the
                   next future career.
                 </p>
               </div>
               <!-- phần bên phải  -->
-              <div class="controls">
+              <div class="controls controls__hiden">
                 <button class="controls-btn">
                   <svg
                     width="8"
@@ -260,7 +260,7 @@
                 </div>
               </div>
               <!-- khối ảnh số 2 -->
-              <div class="popular-item">
+              <div class="popular-item popular-hiden__mobile">
                 <a href="#!">
                   <img
                     src="./assets/img/icon/p2.jpg"
@@ -292,7 +292,7 @@
                 </div>
               </div>
               <!-- khối ảnh số 3 -->
-              <div class="popular-item">
+              <div class="popular-item popular-hiden">
                 <a href="#!"
                   ><img
                     src="./assets/img/icon/p3.jpg"
@@ -326,6 +326,41 @@
                 </div>
               </div>
             </div>
+            <!--  nút bấm btn mobile  -->
+            <div class="controls controls__mobile">
+              <button class="controls-btn">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentcolor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="controls-btn">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentcolor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <!-- =====FEEDBACK =========-->
@@ -348,8 +383,8 @@
                 </div>
                 <!-- khối phải -->
                 <div class="content">
-                  <img src="./assets/img/icon/fb.ion1.svg" alt="" class="open-qoute">
-                  <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                  <img src="./assets/img/icon/fb.ion1.svg" alt="" class="open-qoute ">
+                  <blockquote class="line-clamp__feedback">Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
                 </div>
               </div>
               <!-- fb số 2 -->
@@ -398,14 +433,14 @@
         <!-- =======Features 1======== -->
         <div class="features">
           <div class="main-content">
-            <div class="body">
+            <div class="body features__body">
               <!-- khối phải - hình ảnh -->
-              <div class="imges">
+              <div class="imges features__img">
                 <img class="lower" src="./assets/img/icon/fea1.png" alt="">
-                <img src="./assets/img/icon/fea2.png" alt="">
+                <img class="lower2" src="./assets/img/icon/fea2.png" alt="">
               </div>
               <!-- khối trái CONTENT -->
-              <div class="content">
+              <div class="content features__content">
                 <h2 class="heading-lv2">Learner outcomes through our awesome platform</h2>
                 <p class="desc">87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
                 <p class="desc">Lesson Impact Report (2022)</p>
@@ -417,13 +452,13 @@
         <!-- ========Feadtures 2============= -->
         <div class="features features-2nd">
           <div class="main-content">
-            <div class="body">
+            <div class="body features__body">
               <!-- khối phải - hình ảnh -->
-              <div class="imges">
+              <div class="imges features-2nd__img">
                 <img class="lower" src="./assets/img/icon/fea3.avif" alt="">
               </div>
               <!-- khối trái CONTENT -->
-              <div class="content">
+              <div class="content features-2nd__content">
                 <h2 class="heading-lv2">Take the next step toward your personal and professional goals with Lesson.</h2>
                 <p class="desc">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
                 <a href="#!" class="btn cta-btn">Join Now</a>
@@ -474,73 +509,77 @@
                     <a href="" class="btn">Read More</a>
                   </div>
                 </div>
-                <!-- ------------- blog 2  --------------->
-                <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog1.png" alt="" class="thumb">
-                  </a>
-                 <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
+             
+                  <div class="blog__hiden">
+                    <!-- ------------- blog 2  --------------->
+                    <div class="item">
+                      <a href="#!"> <img src="./assets/img/icon/blog1.png" alt="" class="thumb">
+                      </a>
+                     <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                      </div>
+                    </div>
+                    <!-- blog 2.2 -->
+                      <div class="item">
+                      <a href="#!"> <img src="./assets/img/icon/blog2.png" alt="" class="thumb">
+                      </a>
+                     <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                     </div>
+                    </div>
+                    <!-- blog 2.3 -->
+                    <div class="item">
+                      <a href="#!"> <img src="./assets/img/icon/blog3.png" alt="" class="thumb">
+                      </a>
+                    <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                      </div>
+                    </div>
+                    <!-- ------------- blog 3  --------------->
+                    <div class="item ">
+                      <a href="#!"> <img src="./assets/img/icon/blog1.png" alt="" class="thumb">
+                      </a>
+                     <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                      </div>
+                    </div>
+                    <!-- blog 3.2-->
+                      <div class="item">
+                      <a href="#!"> <img src="./assets/img/icon/blog2.png" alt="" class="thumb">
+                      </a>
+                     <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                     </div>
+                    </div>
+                    <!-- blog 3.3 -->
+                    <div class="item">
+                      <a href="#!"> <img src="./assets/img/icon/blog3.png" alt="" class="thumb">
+                      </a>
+                    <div class="info">
+                        <span class="date">21 November 2021</span>
+                        <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                        </a>
+                        <a href="" class="btn">Read More</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <!-- blog 2.2 -->
-                  <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog2.png" alt="" class="thumb">
-                  </a>
-                 <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
-                 </div>
-                </div>
-                <!-- blog 2.3 -->
-                <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog3.png" alt="" class="thumb">
-                  </a>
-                <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
-                  </div>
-                </div>
-                <!-- ------------- blog 3  --------------->
-                <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog1.png" alt="" class="thumb">
-                  </a>
-                 <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
-                  </div>
-                </div>
-                <!-- blog 3.2-->
-                  <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog2.png" alt="" class="thumb">
-                  </a>
-                 <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
-                 </div>
-                </div>
-                <!-- blog 3.3 -->
-                <div class="item">
-                  <a href="#!"> <img src="./assets/img/icon/blog3.png" alt="" class="thumb">
-                  </a>
-                <div class="info">
-                    <span class="date">21 November 2021</span>
-                    <a href="#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
-                    </a>
-                    <a href="" class="btn">Read More</a>
-                  </div>
-                </div>
-              </div>
+               
+                
               <!-- dấu 3 chấm  -->
               <div class="dots">
                 <span class="dot"></span>
@@ -560,7 +599,7 @@
           <!-- cột 1 -->
           <div class="colum">
            <img src="./assets/img/footer/logo.svg" alt="lesson" class="logo">
-           <p class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
+           <p class="desc footer__mobile--hiden">Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
            <div class="socials">
             <a href="">
               <img src="./assets/img/footer/twitter.svg" alt="Twitter" class="icon">
@@ -613,7 +652,7 @@
             </ul>
           </div>
           <!-- cột 4 -->
-          <div class="colum">
+          <div class="colum footer__mobile--hiden">
             <h3 class="title">Address</h3>
             <ul class="list">
               <li>
