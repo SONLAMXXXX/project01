@@ -1,0 +1,169 @@
+/* pc */
+@media (min-width:992px) {
+    .close-menu,
+    .menu-drawer,
+    .menu-header__icon {
+        display: none;
+    }
+
+}
+/* máy tính bảng + Mobile */
+@media (max-width :991.98px) {
+    /* 1 ẩn thanh nav */
+    .header .btn-sign-up,
+    .nav{
+        display: none;
+    }
+    /* 2. chuyển logp về giữa  */
+    .body-header{
+        position: relative;
+    }
+    .header__logo{
+        position: absolute;
+        left: 50%;
+        translate: -50% -50%;
+}
+/* 3 căn lại vi trí menu icon */
+.menu-header__icon{
+    position: absolute;
+    top: 12px;
+    left: 85px;
+    color: black;
+    height: 27px;
+    width: 27px;
+    z-index: 1;
+}
+/* 4.overlay */
+.menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    z-index: 2;
+    /* khi chưa tác động */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+/* 5. kiểm tra xem check box có được check hay không, nếu được check sẽ hiển thị overlay */
+.menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+/* menu-drawer */
+.menu-drawer{
+    position: fixed;
+    background-color: rgba(255, 231, 231, 0.908);
+    inset: 0 60% 0 0;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: 1s;
+    padding: 20px;
+}
+
+.menu-drawer a {
+    color: #000;
+    list-style-type: none;
+}
+/* kiểm tra xem nếu checkbox được check thì hiện menu */
+.menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+}
+.navbar__list--pc{
+    color: aliceblue;
+}
+/* menu top */
+.close-menu{
+    width: 24px;
+}
+.menu-drawer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-signup-mobile{
+    background: rgb(255, 231, 231);
+    /* border-top: 2px solid #fff; */
+}
+#navbar__list--mobile,li {
+padding: 20px;
+}
+.body-hero {
+    flex-direction: column;
+}
+.hero .media-block  {
+    order: 1;
+
+}
+.hero .content-block {
+    order: 2;
+}
+.hero .content-block {
+    width: 100%;
+    padding-top: 64px;
+    padding-left: 0;
+}
+.hero__media-block{
+    max-width: 100%;
+}
+
+.hero .media-block .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.hero-summary{
+   bottom: 0;
+    left: 0;
+}
+.cta-group{
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* máy tính bảng  */
+@media (min-width:768px) and (max-width:991.98px) {
+
+}
+/*  Mobile */
+@media (max-width:767.98px) {
+
+}
